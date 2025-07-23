@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación JB Logs</title>
+    <style>
+        /* Asegura que el body no tenga márgenes ni padding para que el iframe ocupe todo el espacio */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Evita barras de desplazamiento no deseadas */
+            height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+            width: 100vw; /* Asegura que el body ocupe todo el ancho de la ventana */
+            display: flex; /* Usa flexbox para centrar el iframe si fuera necesario, aunque aquí no es el objetivo principal */
+            justify-content: center;
+            align-items: center;
+        }
+        /* Estilos para el iframe */
+        iframe {
+            border: none; /* Elimina el borde predeterminado del iframe */
+            width: 100%; /* El iframe ocupará el 100% del ancho de su contenedor (body) */
+            height: 100%; /* El iframe ocupará el 100% de la altura de su contenedor (body) */
+            display: block; /* Asegura que el iframe se comporte como un bloque */
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Este iframe incrustará tu aplicación de Google Apps Script.
+        Asegúrate de reemplazar la URL de ejemplo con la URL de despliegue de tu script.
+        El atributo 'target="_top"' en los enlaces dentro de tu aplicación de Apps Script
+        (en login.html y formulario.html) ayudará a que las redirecciones se abran
+        en la ventana principal del navegador, saliendo del iframe, lo cual es crucial
+        para evitar las restricciones de seguridad de los iframes.
+    -->
+    <iframe src="https://script.google.com/macros/s/AKfycbxmBymUkswP1CrLA_KiM0NTCYEH09W8ezjwoJdHGJkn-PK0hO-XsHQwW872N2BPIabNug/exec"></iframe>
+</body>
+</html>
